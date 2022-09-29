@@ -2,7 +2,8 @@ const squareSize = 25;
 const canvasSize = 500;
 
 function setup() {
-  createCanvas(canvasSize, canvasSize);
+  const canvas = createCanvas(canvasSize, canvasSize);
+  canvas.parent('sketch');
 }
 
 function draw() {
