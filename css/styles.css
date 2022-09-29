@@ -3,12 +3,12 @@ body {
     margin: 0;
 }
 
-.container {
+.row {
     display: table;
     width: 100%;
 }
 
-.row {
+.col {
     display: table-cell;
     text-align: center;
     width: 50%;
