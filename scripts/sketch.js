@@ -28,43 +28,57 @@ function draw() {
   beginShape();
   vertex(ladoDelCuadrado, ladoDelCuadrado);
   vertex(ladoDelCuadrado, ladoDelCuadrado * 11.33);
-  vertex(ladoDelCuadrado, ladoDelCuadrado * 11.33);
-  vertex(ladoDelCuadrado * 1.5 - padding, ladoDelCuadrado * 10.5);
   vertex(ladoDelCuadrado * 1.5 - padding, ladoDelCuadrado * 10.5);
   vertex(ladoDelCuadrado * 1.5, ladoDelCuadrado * 10.5);
-  vertex(ladoDelCuadrado * 1.5, ladoDelCuadrado * 10.5);
-  vertex(ladoDelCuadrado * 2.66, ladoDelCuadrado * 8.75);
   vertex(ladoDelCuadrado * 2.66, ladoDelCuadrado * 8.75);
   vertex(ladoDelCuadrado * 3, ladoDelCuadrado * 9);
-  vertex(ladoDelCuadrado * 3, ladoDelCuadrado * 9);
   vertex(ladoDelCuadrado * 4 - padding, ladoDelCuadrado * 8);
   vertex(ladoDelCuadrado * 3, ladoDelCuadrado * 9);
   vertex(ladoDelCuadrado * 4 - padding, ladoDelCuadrado * 8);
-  vertex(ladoDelCuadrado * 4 - padding, ladoDelCuadrado * 8);
-  vertex(ladoDelCuadrado * 4.5, ladoDelCuadrado * 8.66);
   vertex(ladoDelCuadrado * 4.5, ladoDelCuadrado * 8.66);
   vertex(ladoDelCuadrado * 8.25, ladoDelCuadrado * 3.33);
-  vertex(ladoDelCuadrado * 8.25, ladoDelCuadrado * 3.33);
-  vertex(ladoDelCuadrado * 8.33, ladoDelCuadrado * 3.50);
   vertex(ladoDelCuadrado * 8.33, ladoDelCuadrado * 3.50);
   vertex(ladoDelCuadrado * 8.50, ladoDelCuadrado * 3.33);
-  vertex(ladoDelCuadrado * 8.50, ladoDelCuadrado * 3.33);
-  vertex(ladoDelCuadrado * 9 - padding, ladoDelCuadrado * 3.66);
   vertex(ladoDelCuadrado * 9 - padding, ladoDelCuadrado * 3.66);
   vertex(ladoDelCuadrado * 10.33, ladoDelCuadrado * 1.75);
-  vertex(ladoDelCuadrado * 10.33, ladoDelCuadrado * 1.75);
-  vertex(ladoDelCuadrado * 10.75, ladoDelCuadrado * 2);
   vertex(ladoDelCuadrado * 10.75, ladoDelCuadrado * 2);
   vertex(ladoDelCuadrado * 11.1, ladoDelCuadrado * 1.9);
-  vertex(ladoDelCuadrado * 11.1, ladoDelCuadrado * 1.9);
-  vertex(ladoDelCuadrado * 11.6, ladoDelCuadrado * 2.75);
   vertex(ladoDelCuadrado * 11.6, ladoDelCuadrado * 2.75);
   vertex(ladoDelCuadrado * 12, ladoDelCuadrado * 2.8);
-  vertex(ladoDelCuadrado * 12, ladoDelCuadrado * 2.8);
-  vertex(ladoDelCuadrado * 11, ladoDelCuadrado * 1);
   vertex(ladoDelCuadrado * 11, ladoDelCuadrado);
   vertex(ladoDelCuadrado, ladoDelCuadrado);
   endShape();
+  pop();
+
+  push();
+  // fill('#f8445d');
+  // noStroke();
+
+  // beginShape();
+  // vertex(ladoDelCuadrado * 11, ladoDelCuadrado);
+  // endShape();
+  strokeWeight(padding);
+  stroke('#f8445d');
+  line(
+    ladoDelCuadrado * 11, ladoDelCuadrado,
+    ladoDelCuadrado * 12, ladoDelCuadrado * 2.8,
+  );
+  line(
+    ladoDelCuadrado * 12, ladoDelCuadrado * 2.8,
+    ladoDelCuadrado * 16.5, ladoDelCuadrado * 9 - padding,
+  );
+  line(
+    ladoDelCuadrado * 16.5, ladoDelCuadrado * 9 - padding,
+    ladoDelCuadrado * 17.25, ladoDelCuadrado * 8 - padding,
+  );
+  line(
+    ladoDelCuadrado * 17.25, ladoDelCuadrado * 8 - padding,
+    ladoDelCuadrado * 17.75, ladoDelCuadrado * 8.66,
+  );
+  line(
+    ladoDelCuadrado * 17.25, ladoDelCuadrado * 8 - padding,
+    ladoDelCuadrado * 17.75, ladoDelCuadrado * 8.66,
+  );
   pop();
 
   push();
