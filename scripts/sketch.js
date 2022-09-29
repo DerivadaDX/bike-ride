@@ -1,5 +1,5 @@
-const squareSize = 25;
-const canvasSize = 500;
+const canvasSize = 900;
+const squareSize = canvasSize / 20;
 
 function setup() {
   const canvas = createCanvas(canvasSize, canvasSize);
@@ -19,8 +19,8 @@ function draw() {
   pop();
 
   push();
-  strokeWeight(3);
-  line(22, 22, 22, 22 * 12);
+  strokeWeight(4);
+  line(squareSize - 3, squareSize - 3, squareSize - 3, squareSize * 11 + 5);
   pop();
 
   push();
