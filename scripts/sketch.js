@@ -9,18 +9,31 @@ function setup() {
 }
 
 function draw() {
+  dibujarBordeAmarillo();
+  dibujarParteVerde();
+  dibujarPArteAzul();
+  dibujarParteRoja();
+  dibujarGrilla();
+  noLoop();
+}
+
+function dibujarBordeAmarillo() {
   push();
   noStroke();
   fill('#facc31');
   rect(0, 0, tamañoDeCanvas, tamañoDeCanvas);
   pop();
+}
 
+function dibujarParteVerde() {
   push();
   noStroke();
   fill('#62b449');
   rect(ladoDelCuadrado, ladoDelCuadrado, tamañoDeCanvas - (ladoDelCuadrado * 2), tamañoDeCanvas - (ladoDelCuadrado * 2));
   pop();
+}
 
+function dibujarPArteAzul() {
   push();
   fill('#3773b1');
   noStroke();
@@ -49,7 +62,9 @@ function draw() {
   vertex(ladoDelCuadrado, ladoDelCuadrado);
   endShape();
   pop();
+}
 
+function dibujarParteRoja() {
   push();
   fill('#f8445d');
   noStroke();
@@ -66,7 +81,9 @@ function draw() {
   vertex(ladoDelCuadrado * 11, ladoDelCuadrado);
   endShape();
   pop();
+}
 
+function dibujarGrilla() {
   push();
   stroke('gray');
   for (let position = ladoDelCuadrado; position < tamañoDeCanvas; position += ladoDelCuadrado) {
@@ -74,6 +91,4 @@ function draw() {
     line(0, position, tamañoDeCanvas, position);
   }
   pop();
-
-  noLoop();
 }
