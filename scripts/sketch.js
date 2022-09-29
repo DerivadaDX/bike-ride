@@ -1,3 +1,4 @@
+const padding = 5;
 const tamañoDeGrilla = 20;
 const tamañoDeCanvas = 900;
 const ladoDelCuadrado = tamañoDeCanvas / tamañoDeGrilla;
@@ -21,10 +22,9 @@ function draw() {
   pop();
 
   push();
-  const padding = 5;
-  
   fill('#3773b1');
   noStroke();
+
   beginShape();
   vertex(ladoDelCuadrado, ladoDelCuadrado);
   vertex(ladoDelCuadrado, ladoDelCuadrado * 11.33);
