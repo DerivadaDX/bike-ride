@@ -22,6 +22,7 @@ function draw() {
   push();
   strokeWeight(4);
   line(squareSize - 2, squareSize - 2, squareSize - 2, squareSize * 11 + 5);
+  line(squareSize - 2, squareSize - 2, squareSize * 13, squareSize - 2);
   pop();
 
   push();
