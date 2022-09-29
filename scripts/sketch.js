@@ -6,6 +6,7 @@ const ladoDelCuadrado = tamañoDeCanvas / tamañoDeGrilla;
 function setup() {
   const canvas = createCanvas(tamañoDeCanvas, tamañoDeCanvas);
   canvas.parent('sketch');
+  noLoop();
 }
 
 function draw() {
@@ -14,7 +15,6 @@ function draw() {
   dibujarPArteAzul();
   dibujarParteRoja();
   dibujarGrilla();
-  noLoop();
 }
 
 function dibujarBordeAmarillo() {
