@@ -12,8 +12,8 @@ function setup() {
 function draw() {
   dibujarBordeAmarillo();
   dibujarParteVerde();
-  dibujarParteAzul();
-  dibujarParteRoja();
+  dibujarCieloAzul();
+  dibujarCieloRojo();
   dibujarCumbreDeMontaña();
   dibujarGrilla();
 }
@@ -37,7 +37,7 @@ function dibujarParteVerde() {
   pop();
 }
 
-function dibujarParteAzul() {
+function dibujarCieloAzul() {
   push();
   fill('#3773b1');
   noStroke();
@@ -66,7 +66,7 @@ function dibujarParteAzul() {
   pop();
 }
 
-function dibujarParteRoja() {
+function dibujarCieloRojo() {
   push();
   fill('#f8445d');
   noStroke();
