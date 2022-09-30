@@ -86,7 +86,24 @@ function dibujarCieloRojo() {
 }
 
 function dibujarCumbreDeMontaña() {
+  push();
+  fill('#f0f0f0');
+  noStroke();
 
+  beginShape();
+  vertex(ladoDelCuadrado * 7.8, ladoDelCuadrado * 4);
+  vertex(ladoDelCuadrado * 8.25, ladoDelCuadrado * 3.33);
+  vertex(ladoDelCuadrado * 8.33, ladoDelCuadrado * 3.50);
+  vertex(ladoDelCuadrado * 8.50, ladoDelCuadrado * 3.33);
+  vertex(ladoDelCuadrado * 9 - padding, ladoDelCuadrado * 3.66);
+  vertex(ladoDelCuadrado * 10.33, ladoDelCuadrado * 1.75);
+  vertex(ladoDelCuadrado * 10.75, ladoDelCuadrado * 2);
+  vertex(ladoDelCuadrado * 11.1, ladoDelCuadrado * 1.9);
+  vertex(ladoDelCuadrado * 11.6, ladoDelCuadrado * 2.75);
+  vertex(ladoDelCuadrado * 12, ladoDelCuadrado * 2.8);
+  vertex(ladoDelCuadrado * 12.9, ladoDelCuadrado * 4);
+  endShape();
+  pop();
 }
 
 function dibujarGrilla() {
