@@ -14,6 +14,7 @@ function draw() {
   dibujarParteVerde();
   dibujarParteAzul();
   dibujarParteRoja();
+  dibujarCumbreDeMontaña();
   dibujarGrilla();
 }
 
@@ -82,6 +83,10 @@ function dibujarParteRoja() {
   vertex(ladoDelCuadrado * 11, ladoDelCuadrado);
   endShape();
   pop();
+}
+
+function dibujarCumbreDeMontaña() {
+
 }
 
 function dibujarGrilla() {
