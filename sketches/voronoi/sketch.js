@@ -15,7 +15,11 @@ function draw() {
 }
 
 function mousePressed() {
-    dibujarPunto(mouseX, mouseY, 'white');
+    const descripciónDelCuadro = obtenerDescripciónDelCuadro(tamañoDeCanvas, distanciaParaCentrar);
+
+    if (estáDentroDelCuadro(mouseX, mouseY, descripciónDelCuadro)) {
+        dibujarPunto(mouseX, mouseY, 'white');
+    }
 }
 
 function dibujarCuadro(tamañoDeCanvas, distanciaParaCentrar) {
