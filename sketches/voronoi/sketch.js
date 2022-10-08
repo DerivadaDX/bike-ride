@@ -19,10 +19,12 @@ function mousePressed() {
 }
 
 function dibujarCuadro(tamañoDeCanvas, distanciaParaCentrar) {
-    push()
+    const descripción = obtenerDescripciónDelCuadro(tamañoDeCanvas, distanciaParaCentrar);
+
+    push();
     fill(51);
     noStroke();
-    rect(distanciaParaCentrar / 2, distanciaParaCentrar / 8, tamañoDeCanvas - distanciaParaCentrar, tamañoDeCanvas - distanciaParaCentrar);
+    rect(descripción.x, descripción.y, descripción.width, descripción.height);
     pop();
 }
 
