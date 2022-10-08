@@ -33,3 +33,21 @@ function dibujarPunto(x, y, color) {
     point(x, y);
     pop();
 }
+
+function estáDentroDelCuadro(xDelPunto, yDelPunto, descripciónDelCuadro) {
+    const estáDentroHorizontalmente = xDelPunto >= descripciónDelCuadro.x && xDelPunto <= descripciónDelCuadro.x + descripciónDelCuadro.width;
+    const estáDentroVerticalmente = yDelPunto >= descripciónDelCuadro.y && yDelPunto <= descripciónDelCuadro.y + descripciónDelCuadro.height;
+
+    return estáDentroHorizontalmente && estáDentroVerticalmente;
+}
+
+function obtenerDescripciónDelCuadro(tamañoDeCanvas, distanciaParaCentrar) {
+    const descripción = {
+        x: distanciaParaCentrar / 2,
+        y: distanciaParaCentrar / 8,
+        width: tamañoDeCanvas - distanciaParaCentrar,
+        height: tamañoDeCanvas - distanciaParaCentrar
+    };
+
+    return descripción;
+}
