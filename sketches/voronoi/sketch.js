@@ -1,4 +1,4 @@
-const tamañoDeCanvas = 900;
+const tamañoDeCanvas = 750;
 
 function setup() {
     const canvas = createCanvas(tamañoDeCanvas, tamañoDeCanvas);
