@@ -5,16 +5,14 @@ function setup() {
     const canvas = createCanvas(tamañoDeCanvas, tamañoDeCanvas);
     canvas.parent('voronoi');
     background('red');
-    strokeWeight(5);
-    stroke('white');
-}
-
-function draw() {
     dibujarCuadro(tamañoDeCanvas, tamañoDeCuadro);
 }
 
+function draw() {
+}
+
 function mousePressed() {
-    point(mouseX, mouseY);
+    dibujarPunto(mouseX, mouseY);
 }
 
 function dibujarCuadro(tamañoDeCanvas, tamañoDeCuadro) {
@@ -22,6 +20,15 @@ function dibujarCuadro(tamañoDeCanvas, tamañoDeCuadro) {
 
     push()
     fill(51);
+    noStroke();
     rect(distanciaParaCentrar / 2, distanciaParaCentrar / 8, tamañoDeCanvas - distanciaParaCentrar, tamañoDeCanvas - distanciaParaCentrar);
+    pop();
+}
+
+function dibujarPunto(x, y) {
+    push()
+    strokeWeight(5);
+    stroke('white');
+    point(x, y);
     pop();
 }
