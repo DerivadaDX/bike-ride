@@ -1,23 +1,24 @@
 const tamañoDeCanvas = 750;
 const tamañoDeCuadro = 600;
+const distanciaParaCentrar = tamañoDeCanvas - tamañoDeCuadro;
 
 function setup() {
     const canvas = createCanvas(tamañoDeCanvas, tamañoDeCanvas);
     canvas.parent('voronoi');
+
     background('red');
-    dibujarCuadro(tamañoDeCanvas, tamañoDeCuadro);
+
+    dibujarCuadro(tamañoDeCanvas, distanciaParaCentrar);
 }
 
 function draw() {
 }
 
 function mousePressed() {
-    dibujarPunto(mouseX, mouseY);
+    dibujarPunto(mouseX, mouseY, 'white');
 }
 
-function dibujarCuadro(tamañoDeCanvas, tamañoDeCuadro) {
-    const distanciaParaCentrar = tamañoDeCanvas - tamañoDeCuadro;
-
+function dibujarCuadro(tamañoDeCanvas, distanciaParaCentrar) {
     push()
     fill(51);
     noStroke();
@@ -25,10 +26,10 @@ function dibujarCuadro(tamañoDeCanvas, tamañoDeCuadro) {
     pop();
 }
 
-function dibujarPunto(x, y) {
+function dibujarPunto(x, y, color) {
     push()
     strokeWeight(5);
-    stroke('white');
+    stroke(color);
     point(x, y);
     pop();
 }
