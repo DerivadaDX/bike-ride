@@ -5,7 +5,7 @@ const ladoDelCuadrado = tamañoDeCanvas / tamañoDeGrilla;
 
 function setup() {
   const canvas = createCanvas(tamañoDeCanvas, tamañoDeCanvas);
-  canvas.parent('sketch');
+  canvas.parent('hoffman');
   noLoop();
 }
 
