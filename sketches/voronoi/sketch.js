@@ -1,17 +1,30 @@
+let canvas;
 const tamañoDeCanvas = 750;
 const tamañoDeCuadro = 600;
 const distanciaParaCentrar = tamañoDeCanvas - tamañoDeCuadro;
 
 function setup() {
-    const canvas = createCanvas(tamañoDeCanvas, tamañoDeCanvas);
+    canvas = createCanvas(tamañoDeCanvas, tamañoDeCanvas);
     canvas.parent('voronoi');
 
+    centrarHorizontalmente();
     background('red');
 
     dibujarCuadro(tamañoDeCanvas, distanciaParaCentrar);
 }
 
 function draw() {
+}
+
+function windowResized() {
+    centrarHorizontalmente();
+}
+
+function centrarHorizontalmente() {
+    const parent = select('#voronoi');
+    const x = (parent.width - width) / 2;
+
+    canvas.position(x, canvas.y);
 }
 
 function mousePressed() {
