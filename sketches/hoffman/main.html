@@ -6,25 +6,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Albert Hoffman bike-ride</title>
 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
   <link rel="stylesheet" href="../../css/styles.css">
-  <script src="../../libraries/p5.js"></script>
-  <script src="./sketch.js"></script>
 </head>
 
 <body>
-  <main>
-    <h1>Albert Hoffman bike-ride</h1>
-
-    <div class="row" style="padding-top: 2rem;">
-      <div class="col">
-        <div id="hoffman"></div>
-      </div>
-
-      <div class="col">
-        <img src="./assets/bike-ride.jpg" width="900" height="900" alt="Albert Hoffman bike-ride">
+  <main class="section">
+    <div class="container">
+      <h1 class="title is-1">Albert Hoffman bike-ride</h1>
+      <div class="columns">
+        <div class="column">
+          <div id="hoffman"></div>
+        </div>
+        <div class="column">
+          <figure class="image">
+            <img src="./assets/bike-ride.jpg" style="max-width:600px;" alt="Albert Hoffman bike-ride">
+          </figure>
+        </div>
       </div>
     </div>
   </main>
+
+  <script src="../../libraries/p5.js"></script>
+  <script src="./sketch.js"></script>
 </body>
 
 </html>

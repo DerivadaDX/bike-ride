@@ -1,6 +1,6 @@
 const padding = 5;
 const tamañoDeGrilla = 20;
-const tamañoDeCanvas = 900;
+const tamañoDeCanvas = 600;
 const ladoDelCuadrado = tamañoDeCanvas / tamañoDeGrilla;
 
 function setup() {
