@@ -1,16 +1,1 @@
-body {
-    padding: 0;
-    margin: 0;
-}
-
-.row {
-    display: table;
-    width: 100%;
-}
-
-.col {
-    display: table-cell;
-    text-align: center;
-    width: 50%;
-    vertical-align: middle;
-}
+/* Custom CSS rules */
