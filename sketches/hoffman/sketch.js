@@ -91,7 +91,7 @@ function dibujarCumbreDeMontaña() {
   noStroke();
 
   beginShape();
-  vertex(ladoDelCuadrado * 7.8, ladoDelCuadrado * 4);
+  vertex(ladoDelCuadrado * 7.5, ladoDelCuadrado * 4.33);
   vertex(ladoDelCuadrado * 8.25, ladoDelCuadrado * 3.33);
   vertex(ladoDelCuadrado * 8.33, ladoDelCuadrado * 3.50);
   vertex(ladoDelCuadrado * 8.50, ladoDelCuadrado * 3.33);
@@ -102,8 +102,39 @@ function dibujarCumbreDeMontaña() {
   vertex(ladoDelCuadrado * 11.6, ladoDelCuadrado * 2.75);
   vertex(ladoDelCuadrado * 12, ladoDelCuadrado * 2.8);
   vertex(ladoDelCuadrado * 12.9, ladoDelCuadrado * 4);
-  vertex(ladoDelCuadrado * 7.8, ladoDelCuadrado * 4);
-  endShape();
+  vertex(ladoDelCuadrado * 13.15, ladoDelCuadrado * 4.33);
+  endShape(CLOSE);
+
+  beginShape();
+  curveVertex(ladoDelCuadrado * 6.9, ladoDelCuadrado * 5.2);
+  curveVertex(ladoDelCuadrado * 6.9, ladoDelCuadrado * 5.2);
+  curveVertex(ladoDelCuadrado * 8.25, ladoDelCuadrado * 4.25)
+  curveVertex(ladoDelCuadrado * 12.5, ladoDelCuadrado * 4.25);
+  curveVertex(ladoDelCuadrado * 14.15, ladoDelCuadrado * 5.7);
+  curveVertex(ladoDelCuadrado * 13, ladoDelCuadrado * 5.3);
+  curveVertex(ladoDelCuadrado * 12.75, ladoDelCuadrado * 6.2);
+  curveVertex(ladoDelCuadrado * 11.5, ladoDelCuadrado * 4.5);
+  curveVertex(ladoDelCuadrado * 11, ladoDelCuadrado * 6.25);
+  curveVertex(ladoDelCuadrado * 9.75, ladoDelCuadrado * 4.5);
+  curveVertex(ladoDelCuadrado * 9.33, ladoDelCuadrado * 5);
+  curveVertex(ladoDelCuadrado * 9.25, ladoDelCuadrado * 4.5);
+  curveVertex(ladoDelCuadrado * 8, ladoDelCuadrado * 5.5);
+  curveVertex(ladoDelCuadrado * 7.9, ladoDelCuadrado * 4.66);
+  curveVertex(ladoDelCuadrado * 6.9, ladoDelCuadrado * 5.2);
+  curveVertex(ladoDelCuadrado * 6.9, ladoDelCuadrado * 5.2);
+  endShape(CLOSE);
+
+  triangle(
+    ladoDelCuadrado * 6.9, ladoDelCuadrado * 5.2,
+    ladoDelCuadrado * 7.5, ladoDelCuadrado * 4.33,
+    ladoDelCuadrado * 8, ladoDelCuadrado * 4.33,
+  );
+
+  triangle(
+    ladoDelCuadrado * 12.75, ladoDelCuadrado * 4.33,
+    ladoDelCuadrado * 13.15, ladoDelCuadrado * 4.33,
+    ladoDelCuadrado * 14.15, ladoDelCuadrado * 5.7,
+  );
   pop();
 }
 
