@@ -62,7 +62,7 @@ function dibujarCieloAzul() {
   vertex(ladoDelCuadrado * 1.5 - padding, ladoDelCuadrado * 10.5);
   vertex(ladoDelCuadrado, ladoDelCuadrado * 11.33);
   vertex(ladoDelCuadrado, ladoDelCuadrado);
-  endShape();
+  endShape(CLOSE);
   pop();
 }
 
@@ -81,7 +81,7 @@ function dibujarCieloRojo() {
   vertex(ladoDelCuadrado * 16.5, ladoDelCuadrado * 9 - padding);
   vertex(ladoDelCuadrado * 12, ladoDelCuadrado * 2.8);
   vertex(ladoDelCuadrado * 11, ladoDelCuadrado);
-  endShape();
+  endShape(CLOSE);
   pop();
 }
 
