@@ -91,6 +91,12 @@ function dibujarCumbreDeMontaña() {
   noStroke();
 
   beginShape();
+  vertex(ladoDelCuadrado * 6.9, ladoDelCuadrado * 5.2);
+  vertex(ladoDelCuadrado * 7.53, ladoDelCuadrado * 4.3);
+  vertex(ladoDelCuadrado * 8, ladoDelCuadrado * 4.3);
+  endShape(CLOSE);
+
+  beginShape();
   vertex(ladoDelCuadrado * 7.5, ladoDelCuadrado * 4.33);
   vertex(ladoDelCuadrado * 8.25, ladoDelCuadrado * 3.33);
   vertex(ladoDelCuadrado * 8.33, ladoDelCuadrado * 3.50);
@@ -103,6 +109,12 @@ function dibujarCumbreDeMontaña() {
   vertex(ladoDelCuadrado * 12, ladoDelCuadrado * 2.8);
   vertex(ladoDelCuadrado * 12.9, ladoDelCuadrado * 4);
   vertex(ladoDelCuadrado * 13.15, ladoDelCuadrado * 4.33);
+  endShape(CLOSE);
+
+  beginShape();
+  vertex(ladoDelCuadrado * 12, ladoDelCuadrado * 4.25);
+  vertex(ladoDelCuadrado * 13.1, ladoDelCuadrado * 4.25);
+  vertex(ladoDelCuadrado * 14.15, ladoDelCuadrado * 5.7);
   endShape(CLOSE);
 
   beginShape();
@@ -123,18 +135,6 @@ function dibujarCumbreDeMontaña() {
   curveVertex(ladoDelCuadrado * 6.9, ladoDelCuadrado * 5.2);
   curveVertex(ladoDelCuadrado * 6.9, ladoDelCuadrado * 5.2);
   endShape(CLOSE);
-
-  triangle(
-    ladoDelCuadrado * 6.9, ladoDelCuadrado * 5.2,
-    ladoDelCuadrado * 7.5, ladoDelCuadrado * 4.33,
-    ladoDelCuadrado * 8, ladoDelCuadrado * 4.33,
-  );
-
-  triangle(
-    ladoDelCuadrado * 12.75, ladoDelCuadrado * 4.33,
-    ladoDelCuadrado * 13.15, ladoDelCuadrado * 4.33,
-    ladoDelCuadrado * 14.15, ladoDelCuadrado * 5.7,
-  );
   pop();
 }
 
